@@ -1,3 +1,5 @@
+<?php include 'admin_menu.php'; ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,7 +19,7 @@
     --text:#064e3b;
 }
 body{
-    background:var(--bg);
+    background:#f2f7f3ff;
     font-family:'Poppins',sans-serif;
     color:var(--text);
 }
@@ -185,7 +187,7 @@ body{
 <h6 class="section-title">Personal Information</h6>
 <div class="row g-3">
 <div class="col-md-4 col-sm-12"><label class="form-label">First Name</label><input type="text" name="firstname" class="form-control"></div>
-<div class="col-md-4 col-sm-12"><label class="form-label">Father Name</label><input type="text" name="fathername" class="form-control"></div>
+<div class="col-md-4 col-sm-12"><label class="form-label">Father/Husband Name</label><input type="text" name="fathername" class="form-control"></div>
 <div class="col-md-4 col-sm-12"><label class="form-label">Last Name</label><input type="text" name="lastname" class="form-control"></div>
 
 <div class="col-md-6 col-sm-12"><label class="form-label">Date of Birth</label><input type="date" name="dob" class="form-control"></div>
@@ -201,6 +203,93 @@ body{
 <div class="col-md-6 col-sm-12"><label class="form-label">Place of Birth</label><input type="text" name="birth_place" class="form-control"></div>
 <div class="col-md-6 col-sm-12"><label class="form-label">Marital Status</label>
 <select name="marital" class="form-select"><option>Single</option><option>Married</option></select></div>
+</div>
+</div>
+
+<!-- CURRENT ACADEMIC -->
+<div class="card-box">
+<h6 class="section-title">Current Academic Details</h6>
+<div class="row g-3">
+<div class="col-md-6 col-sm-12"><label class="form-label">Course</label><input type="text" name="course" class="form-control"></div>
+<div class="col-md-6 col-sm-12"><label class="form-label">Specialization</label><input type="text" name="specialization" class="form-control"></div>
+<div class="col-md-6 col-sm-12"><label class="form-label">Semester</label><input type="text" name="semester" class="form-control"></div>
+<div class="col-md-6 col-sm-12"><label class="form-label">Last GPA</label><input type="text" name="gpa" class="form-control"></div>
+<div class="col-md-6 col-sm-12"><label class="form-label">Admission Year</label><input type="text" name="admission_year" class="form-control"></div>
+<div class="col-md-6 col-sm-12"><label class="form-label">Section</label><input type="text" name="section" class="form-control"></div>
+</div>
+</div>
+
+<!-- PREVIOUS ACADEMIC INFORMATION -->
+<div class="card-box">
+<h6 class="section-title">Previous Academic Information</h6>
+<div class="row g-3">
+
+<div class="col-md-3 col-sm-6">
+    <label class="form-label">Last Standard</label>
+    <input type="text" name="last_standard" class="form-control">
+</div>
+
+<div class="col-md-3 col-sm-6">
+    <label class="form-label">Board</label>
+    <input type="text" name="board" class="form-control">
+</div>
+
+<div class="col-md-3 col-sm-6">
+    <label class="form-label">Passing Year</label>
+    <input type="text" name="passing_year" class="form-control">
+</div>
+
+<div class="col-md-3 col-sm-6">
+    <label class="form-label">Percentage</label>
+    <input type="number" step="0.01" name="percentage" class="form-control">
+</div>
+
+</div>
+</div>
+
+<!-- FAMILY DETAILS -->
+<div class="card-box">
+<h6 class="section-title">Family Details</h6>
+<div class="row g-3">
+
+<div class="col-md-6 col-sm-12">
+    <label class="form-label">Father's Name</label>
+    <input type="text" name="father_name" class="form-control">
+</div>
+
+<div class="col-md-6 col-sm-12">
+    <label class="form-label">Father's Occupation</label>
+    <input type="text" name="father_occupation" class="form-control">
+</div>
+
+<div class="col-md-6 col-sm-12">
+    <label class="form-label">Mother's Name</label>
+    <input type="text" name="mother_name" class="form-control">
+</div>
+
+<div class="col-md-6 col-sm-12">
+    <label class="form-label">Mother's Occupation</label>
+    <input type="text" name="mother_occupation" class="form-control">
+</div>
+
+</div>
+</div>
+
+<!-- ADDRESS DETAILS -->
+<div class="card-box">
+<h6 class="section-title">Address Details</h6>
+<div class="row g-3">
+
+<div class="col-md-6 col-sm-12">
+    <label class="form-label">Permanent Address</label>
+    <textarea name="permanent_address" rows="3" class="form-control"></textarea>
+</div>
+
+<div class="col-md-6 col-sm-12">
+    <label class="form-label">Current Residential Address</label>
+    <textarea name="current_address" rows="3" class="form-control"></textarea>
+</div>
+
 </div>
 </div>
 
@@ -236,30 +325,7 @@ body{
 </div>
 </div>
 
-<!-- PREVIOUS ACADEMIC INFORMATION -->
-<div class="card-box">
-<h6 class="section-title">Previous Academic Information</h6>
-<div class="row g-3">
-<div class="col-md-3 col-sm-6"><label class="form-label">10th Percentage</label><input type="number" step="0.01" name="tenth_marks" class="form-control"></div>
-<div class="col-md-3 col-sm-6"><label class="form-label">10th Passing Year</label><input type="text" name="tenth_year" class="form-control"></div>
-<div class="col-md-3 col-sm-6"><label class="form-label">12th Stream</label><input type="text" name="twelfth_stream" class="form-control"></div>
-<div class="col-md-3 col-sm-6"><label class="form-label">12th Percentage</label><input type="number" step="0.01" name="twelfth_marks" class="form-control"></div>
-<div class="col-md-3 col-sm-6"><label class="form-label">12th Passing Year</label><input type="text" name="twelfth_year" class="form-control"></div>
-</div>
-</div>
 
-<!-- CURRENT ACADEMIC -->
-<div class="card-box">
-<h6 class="section-title">Current Academic Details</h6>
-<div class="row g-3">
-<div class="col-md-6 col-sm-12"><label class="form-label">Course</label><input type="text" name="course" class="form-control"></div>
-<div class="col-md-6 col-sm-12"><label class="form-label">Specialization</label><input type="text" name="specialization" class="form-control"></div>
-<div class="col-md-6 col-sm-12"><label class="form-label">Semester</label><input type="text" name="semester" class="form-control"></div>
-<div class="col-md-6 col-sm-12"><label class="form-label">Last GPA</label><input type="text" name="gpa" class="form-control"></div>
-<div class="col-md-6 col-sm-12"><label class="form-label">Admission Year</label><input type="text" name="admission_year" class="form-control"></div>
-<div class="col-md-6 col-sm-12"><label class="form-label">Section</label><input type="text" name="section" class="form-control"></div>
-</div>
-</div>
 
 <!-- EMERGENCY CONTACT -->
 <div class="card-box">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Student Profile | Shruti Vora</title>
+    <title>Student Profile</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
@@ -95,7 +95,7 @@
 
 <div class="main-content">
     <div class="mb-4">
-        <h2 class="fw-bold">Student Master Profile</h2>
+        <h2 class="fw-bold">Student Profile</h2>
         <p class="text-muted">Comprehensive record of personal, academic, and medical information.</p>
     </div>
 
@@ -158,6 +158,71 @@
                 </div>
             </div>
 
+             <div class="card-box">
+                <h6 class="section-title"><i class="fas fa-graduation-cap me-2"></i>Academic Status</h6>
+                <div class="row">
+                    <div class="col-md-6 info-row">
+                        <div class="profile-label">Current Course</div>
+                        <div class="profile-value">B.Sc Computer Science (Honors)</div>
+                    </div>
+                    <div class="col-md-6 info-row">
+                        <div class="profile-label">Specialization</div>
+                        <div class="profile-value">Artificial Intelligence & ML</div>
+                    </div>
+                    <div class="col-md-6 info-row">
+                        <div class="profile-label">Current Semester</div>
+                        <div class="profile-value">4th Semester (Year 2)</div>
+                    </div>
+                    <div class="col-md-6 info-row">
+                        <div class="profile-label">Last Semester GPA</div>
+                        <div class="profile-value fw-bold text-success">8.62 / 10.0</div>
+                    </div>
+                    <div class="col-md-6 info-row">
+                        <div class="profile-label">Admission Year</div>
+                        <div class="profile-value">2023</div>
+                    </div>
+                    <div class="col-md-6 info-row">
+                        <div class="profile-label">Class Section</div>
+                        <div class="profile-value">Section B</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <h6 class="section-title"><i class="fas fa-users me-2"></i>Family Details</h6>
+                <div class="row">
+                    <div class="col-md-6 info-row">
+                        <div class="profile-label">Father's Name</div>
+                        <div class="profile-value">Rajesh Vora</div>
+                    </div>
+                    <div class="col-md-6 info-row">
+                        <div class="profile-label">Father's Occupation</div>
+                        <div class="profile-value">Business Owner</div>
+                    </div>
+                    <div class="col-md-6 info-row">
+                        <div class="profile-label">Mother's Name</div>
+                        <div class="profile-value">Meena Vora</div>
+                    </div>
+                    <div class="col-md-6 info-row">
+                        <div class="profile-label">Mother's Occupation</div>
+                        <div class="profile-value">Homemaker</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <h6 class="section-title"><i class="fas fa-map-marker-alt me-2"></i>Address Details</h6>
+                <div class="mb-4">
+                    <p class="profile-label mb-1">Permanent Address</p>
+                    <p class="profile-value">Flat No. 402, Sunshine Heights, J.P. Road, Andheri West, Mumbai, Maharashtra - 400053, India</p>
+                </div>
+                <div class="mb-4 pt-3 border-top">
+                    <p class="profile-label mb-1">Current Residential Address</p>
+                    <p class="profile-value">Same as Permanent Address</p>
+                </div>
+            </div>
+
+
             <div class="card-box">
                 <h6 class="section-title"><i class="fas fa-heartbeat me-2"></i>Physical & Health Metrics</h6>
                 <div class="row text-center">
@@ -193,74 +258,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="card-box">
-                <h6 class="section-title"><i class="fas fa-users me-2"></i>Family Details</h6>
-                <div class="row">
-                    <div class="col-md-6 info-row">
-                        <div class="profile-label">Father's Name</div>
-                        <div class="profile-value">Rajesh Vora</div>
-                    </div>
-                    <div class="col-md-6 info-row">
-                        <div class="profile-label">Father's Occupation</div>
-                        <div class="profile-value">Business Owner</div>
-                    </div>
-                    <div class="col-md-6 info-row">
-                        <div class="profile-label">Mother's Name</div>
-                        <div class="profile-value">Meena Vora</div>
-                    </div>
-                    <div class="col-md-6 info-row">
-                        <div class="profile-label">Mother's Occupation</div>
-                        <div class="profile-value">Homemaker</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-box">
-                <h6 class="section-title"><i class="fas fa-map-marker-alt me-2"></i>Address Details</h6>
-                <div class="mb-4">
-                    <p class="profile-label mb-1">Permanent Address</p>
-                    <p class="profile-value">Flat No. 402, Sunshine Heights, J.P. Road, Andheri West, Mumbai, Maharashtra - 400053, India</p>
-                </div>
-                <div class="mb-4 pt-3 border-top">
-                    <p class="profile-label mb-1">Current/Correspondence Address</p>
-                    <p class="profile-value">Same as Permanent Address</p>
-                </div>
-                <div>
-                    <p class="profile-label mb-1">Residential Type</p>
-                    <p class="profile-value">Staying with Parents (Local Resident)</p>
-                </div>
-            </div>
-
-            <div class="card-box">
-                <h6 class="section-title"><i class="fas fa-graduation-cap me-2"></i>Academic Status</h6>
-                <div class="row">
-                    <div class="col-md-6 info-row">
-                        <div class="profile-label">Current Course</div>
-                        <div class="profile-value">B.Sc Computer Science (Honors)</div>
-                    </div>
-                    <div class="col-md-6 info-row">
-                        <div class="profile-label">Specialization</div>
-                        <div class="profile-value">Artificial Intelligence & ML</div>
-                    </div>
-                    <div class="col-md-6 info-row">
-                        <div class="profile-label">Current Semester</div>
-                        <div class="profile-value">4th Semester (Year 2)</div>
-                    </div>
-                    <div class="col-md-6 info-row">
-                        <div class="profile-label">Last Semester GPA</div>
-                        <div class="profile-value fw-bold text-success">8.62 / 10.0</div>
-                    </div>
-                    <div class="col-md-6 info-row">
-                        <div class="profile-label">Admission Year</div>
-                        <div class="profile-value">2023</div>
-                    </div>
-                    <div class="col-md-6 info-row">
-                        <div class="profile-label">Class Section</div>
-                        <div class="profile-value">Section B</div>
-                    </div>
-                </div>
-            </div>
+           
 
             <div class="card-box bg-light border-0">
                 <h6 class="section-title text-dark"><i class="fas fa-phone-alt me-2"></i>Emergency Contact (Primary)</h6>

@@ -103,6 +103,7 @@
 
 <body>
     <?php include 'faculty_menu.php'; ?>
+
     <div class="main-content">
         <div class="mb-4">
             <h2 class="fw-bold" style="color: var(--dark-purple);">Faculty Profile</h2>
@@ -131,6 +132,40 @@
 
             <div class="col-lg-8">
                 
+             <div class="card-box">
+                    <h6 class="section-title"><i class="fas fa-id-card me-2"></i>Personal Details</h6>
+                    <div class="row">
+                        <div class="col-md-6 info-row">
+                            <div class="profile-label">Date of Birth</div>
+                            <div class="profile-value">22 August 1985</div>
+                        </div>
+                        <div class="col-md-6 info-row">
+                            <div class="profile-label">Gender</div>
+                            <div class="profile-value">Male</div>
+                        </div>
+                         <div class="col-md-6 info-row">
+                            <div class="profile-label">Personal Contact</div>
+                            <div class="profile-value">+91 98200 12345</div>
+                        </div>
+                        <div class="col-md-6 info-row">
+                            <div class="profile-label">Blood Group</div>
+                            <div class="profile-value text-danger fw-bold">O Positive</div>
+                        </div> 
+                        <div class="col-md-6 info-row">
+                            <div class="profile-label">Marital Status</div>
+                            <div class="profile-value">Married</div>
+                        </div>
+                        <div class="col-md-6 info-row">
+                            <div class="profile-label">Aadhar Number</div>
+                            <div class="profile-value">XXXX-XXXX-5678</div>
+                        </div>
+                        <div class="col-md-6 info-row">
+                            <div class="profile-label">Languages Known</div>
+                            <div class="profile-value">English, Hindi, Marathi, Gujarati</div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="card-box">
                     <h6 class="section-title"><i class="fas fa-briefcase me-2"></i>Professional Identity</h6>
                     <div class="row">
@@ -149,10 +184,6 @@
                         <div class="col-md-6 info-row">
                             <div class="profile-label">Teaching Experience</div>
                             <div class="profile-value">12 Years (Industrial: 2 yrs | Academic: 10 yrs)</div>
-                        </div>
-                        <div class="col-md-6 info-row">
-                            <div class="profile-label">Staff Room Location</div>
-                            <div class="profile-value">Block A, Room 302, 3rd Floor (Main Wing)</div>
                         </div>
                         <div class="col-md-6 info-row">
                             <div class="profile-label">Employment Type</div>
@@ -187,35 +218,7 @@
                     </div>
                 </div>
 
-                <div class="card-box">
-                    <h6 class="section-title"><i class="fas fa-id-card me-2"></i>Personal Details</h6>
-                    <div class="row">
-                        <div class="col-md-6 info-row">
-                            <div class="profile-label">Date of Birth</div>
-                            <div class="profile-value">22 August 1985</div>
-                        </div>
-                        <div class="col-md-6 info-row">
-                            <div class="profile-label">Blood Group</div>
-                            <div class="profile-value text-danger fw-bold">O Positive</div>
-                        </div>
-                        <div class="col-md-6 info-row">
-                            <div class="profile-label">Personal Contact</div>
-                            <div class="profile-value">+91 98200 12345</div>
-                        </div>
-                        <div class="col-md-6 info-row">
-                            <div class="profile-label">Marital Status</div>
-                            <div class="profile-value">Married</div>
-                        </div>
-                        <div class="col-md-6 info-row">
-                            <div class="profile-label">Aadhar Number</div>
-                            <div class="profile-value">XXXX-XXXX-5678</div>
-                        </div>
-                        <div class="col-md-6 info-row">
-                            <div class="profile-label">Languages Known</div>
-                            <div class="profile-value">English, Hindi, Marathi, Gujarati</div>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <div class="card-box">
                     <h6 class="section-title"><i class="fas fa-map-marked-alt me-2"></i>Residential Address</h6>
