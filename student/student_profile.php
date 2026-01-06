@@ -1,96 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Student Profile</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-
-    <style>
-        :root{
-            --primary-blue:#2563eb;
-            --nav-bg:#4a5fe8ff;
-            --light-bg:#f8fafc;
-            --card-bg:#ffffff;
-            --text-main:#1e293b;
-            --text-muted:#64748b;
-            --accent-red: #ef4444;
-        }
-
-        body{
-            margin:0;
-            font-family:'Poppins',sans-serif;
-            background:var(--light-bg);
-            color:var(--text-main);
-        }
-
-        .main-content{
-            padding:2rem 5%;
-        }
-
-        .card-box{
-            background:var(--card-bg);
-            border-radius:12px;
-            padding:1.5rem;
-            border:1px solid #e5e7eb;
-            box-shadow:0 4px 6px rgba(0,0,0,.05);
-            margin-bottom: 1.5rem;
-        }
-
-        .profile-img{
-            width:130px;
-            height:130px;
-            border-radius:50%;
-            object-fit:cover;
-            border:4px solid var(--primary-blue);
-        }
-
-        .section-title {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--primary-blue);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            border-bottom: 2px solid #f1f5f9;
-            padding-bottom: 0.5rem;
-            margin-bottom: 1.25rem;
-        }
-
-        .profile-label{
-            font-weight: 600;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-        
-        .profile-value{
-            font-weight: 500;
-            font-size: 0.95rem;
-            color: var(--text-main);
-        }
-
-        .info-row {
-            padding: 10px 0;
-            border-bottom: 1px solid #f8fafc;
-        }
-
-        .info-row:last-child {
-            border-bottom: none;
-        }
-
-        .badge-blood {
-            background-color: #fee2e2;
-            color: var(--accent-red);
-            padding: 0.4rem 0.8rem;
-            border-radius: 6px;
-            font-weight: 700;
-        }
-    </style>
-</head>
-
-<body>
+<?php include 'student_header.php'; ?>
 <?php include 'student_menu.php'; ?>
 
 <div class="main-content">
@@ -99,9 +7,9 @@
         <p class="text-muted">Comprehensive record of personal, academic, and medical information.</p>
     </div>
 
-    <div class="row g-4">
+<div class="row g-4 align-items-start">
         <div class="col-lg-4">
-            <div class="card-box text-center sticky-top" style="top: 20px; z-index: 10;">
+            <div class="card-box text-center profile-sticky" style="top: 20px; z-index: 10;">
                 <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="profile-img mb-3" alt="Student Photo">
                 <h4 class="fw-bold mb-0">Shruti Vora</h4>
                 <p class="text-primary fw-medium mb-3">ID: CS2023-0145</p>
@@ -282,5 +190,4 @@
     </div>
 </div>
 
-</body>
-</html>
+<?php include 'student_footer.php'; ?>

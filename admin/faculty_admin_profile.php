@@ -1,5 +1,5 @@
-<?php include 'faculty_header.php'; ?>
-<?php include 'faculty_menu.php'; ?>
+<?php include 'admin_header.php'; ?>
+<?php include 'admin_menu.php'; ?>
 
     <div class="main-content">
         <div class="mb-4">
@@ -21,7 +21,7 @@
                     </div>
 
                     <div class="d-grid gap-2 mt-4">
-                        <button class="btn btn-purple"><i class="fas fa-user-edit me-2"></i>Update Portfolio</button>
+                        <button class="btn btn-success"><i class="fas fa-user-edit me-2"></i>Update Portfolio</button>
                         <button class="btn btn-outline-secondary"><i class="fas fa-file-pdf me-2"></i>Download CV</button>
                     </div>
                 </div>
@@ -132,7 +132,7 @@
                 </div>
 
                     <div class="card-box card-accent">
-                    <h6 class="section-title text-dark"><i class="fas fa-phone-alt me-2"></i>Emergency Contact Details</h6>
+                    <h6 class="section-title"><i class="fas fa-phone-alt me-2"></i>Emergency Contact Details</h6>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="profile-label">Spouse/Kin Name</div>
@@ -152,4 +152,4 @@
             </div>
         </div>
     </div>
-<?php include 'faculty_footer.php'; ?>
+<?php include 'admin_footer.php'; ?>

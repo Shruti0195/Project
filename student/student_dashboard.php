@@ -1,107 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>SMS - Student Dashboard</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-<style>
-:root {
-  --primary-blue:#2563eb;
-  --dark-blue:#1e3a8a;
-  --light-bg:#f8fafc;
-  --card-bg:#ffffff;
-  --nav-bg:#4a5fe8ff;
-  --text-main:#1e293b;
-  --text-muted:#64748b;
-}
-body{
- margin:0;
- font-family:'Poppins',sans-serif;
- background:var(--light-bg);
- color:var(--text-main)
-}
-.main-content{padding:2rem 2%}
-.topbar h1{font-weight:700;font-size:2.3rem}
-.announcement-item{
- background:#fff;
- border-left:4px solid var(--primary-blue);
- padding:10px 20px;
- border-radius:8px;
- margin-bottom:10px;
- display:flex;
- align-items:center;
- box-shadow:0 2px 5px rgba(0,0,0,.04)
-}
-.card-box{
- background:var(--card-bg);
- border-radius:12px;
- padding:1.2rem;
- border:1px solid rgba(226,232,240,.8);
- box-shadow:0 4px 6px -1px rgba(0,0,0,.05);
- height:100%
-}
-.stat-card{border-top:4px solid var(--primary-blue)}
-.progress{height:6px;margin-top:4px}
-.stats-grid{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
- gap:1rem
-}
-@media(min-width:1200px){
- .stats-grid{grid-template-columns:repeat(5,1fr)}
-}
-.course-item{
- padding:.8rem 0;
- border-bottom:1px solid #f1f5f9;
- display:flex;
- justify-content:space-between;
- align-items:center
-}
-.course-name{font-weight:700}
-.prof-name{color:var(--text-muted);font-size:.85rem}
-.chart-area{
- height:160px;
- display:flex;
- align-items:flex-end;
- justify-content:space-around;
- border-bottom:2px solid #cbd5e1;
- padding-bottom:5px
-}
-.bar-container{width:40px;display:flex;flex-direction:column;justify-content:flex-end;height:100%}
-.bar{
- width:100%;
- background:var(--primary-blue);
- border-radius:4px 4px 0 0;
- display:flex;
- justify-content:center;
- padding-top:5px
-}
-.bar-value{color:#fff;font-size:9px;font-weight:700}
-.bar-label{margin-top:8px;font-size:11px;font-weight:600;color:var(--text-muted)}
-.schedule-item{
- display:flex;
- align-items:center;
- justify-content:space-between;
- padding:.9rem 0;
- border-bottom:1px solid #f1f5f9
-}
-.schedule-time{font-weight:700;color:var(--primary-blue);min-width:90px}
-.schedule-subject{font-weight:700}
-.schedule-meta{font-size:.85rem;color:var(--text-muted)}
-</style>
-</head>
-
-<body>
-
-<?php include 'student_menu.php'; ?>
-
-<!-- NAVBAR -->
-<!-- <iframe src="smenu.php" style="width:100%;border:none;height:90px;"></iframe> -->
+<?php include 'student_header.php';?>
+<?php include 'student_menu.php';?>
 
 <div class="main-content">
   <div class="topbar mb-4">
@@ -284,5 +182,5 @@ body{
   </div>
 
 </div>
-</body>
-</html>
+
+<?php include 'student_footer.php';?>

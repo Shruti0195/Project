@@ -1,0 +1,122 @@
+    :root {
+        --primary-green: #509d81ff;
+        --light-bg: #f2f7f3ff;
+        --card-bg: #ffffff;
+        --text-main: #1f2937;
+        --text-muted: #6b7280;
+        --accent-red: #ef4444;
+        /* --border-color: #e2e8f0; */
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--light-bg);
+        color: var(--text-main);
+    }
+
+    .main-content {
+        padding: 2rem 5%;
+    }
+
+    .card-box {
+        background: var(--card-bg);
+        border-radius: 12px;
+        padding: 1.5rem;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        margin-bottom: 1.5rem;
+    }
+
+    .profile-img {
+        width: 140px;
+        height: 140px;
+        border-radius: 12px; /* Square with rounded corners for professional look */
+        object-fit: cover;
+        border: 4px solid var(--accent-green);
+    }
+
+    .section-title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--primary-green);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-bottom: 2px solid var(--light-bg);
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .profile-label {
+        font-weight: 600;
+        color: var(--text-muted);
+        font-size: 0.85rem;
+    }
+    
+    .profile-value {
+        font-weight: 500;
+        font-size: 0.95rem;
+        color: var(--text-main);
+    }
+
+    .info-row {
+        padding: 10px 0;
+        border-bottom: 1px solid var(--light-bg);
+    }
+
+    .info-row:last-child {
+        border-bottom: none;
+    }
+
+    /* .badge-dept {
+        background-color: var(--primary-green);;
+        color: var(--primary-green);
+        padding: 0.4rem 0.8rem;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 0.85rem;
+    } */
+    .badge-dept {
+    background-color: #e6f4ea; /* light green background */
+    color: #28a745;            /* primary green text */
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+
+    .btn-purple {
+        background: var(--primary-green);
+        color: white;
+    }
+    .btn-purple:hover {
+        background: var(--dark-green);
+        color: white;
+    }
+    .profile-sticky {
+  position: sticky;
+  top: 20px;
+  z-index: 10;
+  align-self: flex-start;
+}
+.faculty-title {
+  color: var(--dark-green);
+}
+
+.faculty-id {
+  color: var(--primary-green);
+}
+
+.card-accent {
+  background: #fdfaff;
+  border-left: 5px solid var(--accent-green);
+}
+
+
+/* Disable sticky on small screens */
+@media (max-width: 991px) {
+  .profile-sticky {
+    position: static;
+  }
+}

@@ -1,114 +1,18 @@
-<?php include 'admin_menu.php'; ?>
-
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Student Profile</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root{
-    --primary-green:#509d81ff;
-    --light-bg:#f2f7f3ff;
-    --card-bg:#ffffff;
-    --text-main:#1f2937;
-    --text-muted:#6b7280;
-    --accent-red:#ef4444;
-}
-
-body{
-    margin:0;
-    font-family:'Poppins',sans-serif;
-    background:var(--light-bg);
-    color:var(--text-main);
-}
-
-.main-content{ padding:2rem 5%; }
-
-.card-box{
-    background:var(--card-bg);
-    border-radius:12px;
-    padding:1.5rem;
-    border:1px solid rgba(226,232,240,0.8);
-    box-shadow:0 4px 6px rgba(0,0,0,.05);
-    margin-bottom:1.5rem;
-}
-
-.profile-img{
-    width:130px;
-    height:130px;
-    border-radius:50%;
-    object-fit:cover;
-    border:4px solid var(--primary-green);
-}
-
-.section-title{
-    font-size:1rem;
-    font-weight:700;
-    color:var(--primary-green);
-    text-transform:uppercase;
-    letter-spacing:.5px;
-    border-bottom:2px solid #dcfce7;
-    padding-bottom:.5rem;
-    margin-bottom:1.25rem;
-}
-
-.profile-label{
-    font-weight:600;
-    color:var(--text-muted);
-    font-size:.85rem;
-}
-
-.profile-value{
-    font-weight:500;
-    font-size:.95rem;
-    color:var(--text-main);
-}
-
-.info-row{
-    padding:10px 0;
-    border-bottom:1px solid #ecfdf5;
-}
-.info-row:last-child{ border-bottom:none; }
-
-.badge-blood{
-    background-color:#fee2e2;
-    color:var(--accent-red);
-    padding:.4rem .8rem;
-    border-radius:6px;
-    font-weight:700;
-}
-
-.btn-primary{
-    background-color:var(--primary-green);
-    border-color:var(--primary-green);
-}
-.btn-primary:hover{
-    background-color:#3f8f72;
-    border-color:#3f8f72;
-}
-</style>
-</head>
-
-<body>
+<?php include 'admin_header.php';?>
+<?php include 'admin_menu.php';?>
 
 <div class="main-content">
 
 <div class="mb-4">
-    <h2 class="fw-bold">Student Profile</h2>
+    <h2 class="fw-bold student-title">Student Profile</h2>
     <p class="text-muted">Comprehensive record of personal, academic, and medical information.</p>
 </div>
 
-<div class="row g-4">
+<div class="row g-4 align-items-start">
 
 <!-- LEFT PROFILE -->
 <div class="col-lg-4">
-<div class="card-box text-center sticky-top" style="top:20px;">
+<div class="card-box text-center" style="top:20px;">
     <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="profile-img mb-3">
     <h4 class="fw-bold mb-0">Shruti Vora</h4>
     <p class="text-success fw-medium mb-3">ID: CS2023-0145</p>
@@ -125,7 +29,7 @@ body{
     </div>
 
     <div class="d-grid gap-2 mt-4">
-        <button class="btn btn-primary"><i class="fas fa-edit me-2"></i>Edit Profile</button>
+        <button class="btn btn-success"><i class="fas fa-edit me-2"></i>Edit Profile</button>
         <button class="btn btn-outline-secondary"><i class="fas fa-print me-2"></i>Download ID Card</button>
     </div>
 </div>
@@ -217,5 +121,4 @@ body{
 </div>
 </div>
 
-</body>
-</html>
+<?php include 'admin_footer.php';?>

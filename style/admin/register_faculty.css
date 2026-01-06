@@ -1,0 +1,120 @@
+:root{
+    --theme:#065f46;
+    --bg:#c7f0df;
+    --card:#ffffff;
+    --border:#a7f3d0;
+    --text:#064e3b;
+}
+
+body{
+    background:#f2f7f3ff;
+    font-family:'Poppins',sans-serif;
+    color:var(--text);
+}
+.main-content{padding:2rem 4%;}
+.card-box{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:1.5rem;
+    margin-bottom:1.5rem;
+    box-shadow:0 6px 10px rgba(0,0,0,.08);
+}
+.page-title{
+    font-family:'Montserrat',sans-serif;
+    font-weight:800;
+    font-size:2rem;
+}
+.section-title{
+    font-family:'Montserrat',sans-serif;
+    color:var(--theme);
+    font-weight:700;
+    font-size:1rem;
+    border-bottom:2px solid var(--border);
+    padding-bottom:.45rem;
+    margin-bottom:1rem;
+    text-transform:uppercase;
+}
+.btn-theme{
+    background:var(--theme);
+    color:#fff;
+    border:none;
+    border-radius:8px;
+}
+.btn-clear{
+    background:#fff;
+    color:var(--theme);
+    border:2px solid var(--theme);
+}
+.heading-back{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:2rem;
+}
+.heading-back .btn-back{
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.button-row{
+    display:flex;
+    justify-content:space-between;
+    margin-top:2rem;
+}
+/* Buttons container */
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Individual buttons */
+.button-row button {
+    width: auto;
+    padding: 0.5rem 1.5rem;
+    flex: 0 0 auto;
+}
+
+/* Theme button hover */
+.btn-theme:hover {
+    background-color: #064e3b;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 12px rgba(6,95,70,0.25);
+    color: #fff;
+}
+
+/* Clear button hover */
+.btn-clear:hover {
+    background: #fff;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 12px rgba(6,95,70,0.25);
+    color: var(--theme);
+}
+
+@media(max-width:576px){
+    .button-row button {
+        font-size:0.85rem;
+        padding:0.35rem 0.8rem;
+    }
+}
+@media(max-width:480px){
+    .heading-back .btn-back{
+        font-size:0.7rem;
+        padding:0.25rem 0.6rem;
+    }
+}
+@media(max-width:768px){
+    .main-content{padding:1.2rem;}
+    .page-title{font-size:1.6rem;}
+    .heading-back h2.page-title {font-size:1.6rem;}
+    .heading-back .btn-back {padding:0.35rem 0.8rem;font-size:0.85rem;}
+}
+@media(max-width:480px){
+    .heading-back h2.page-title {font-size:1rem;}
+    .heading-back .btn-back {padding:0.3rem 0.7rem;font-size:0.8rem;}
+}

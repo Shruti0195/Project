@@ -1,0 +1,79 @@
+:root {
+  --primary-purple: #5d358dff;
+  --dark-purple: #54336fff;
+  --light-bg: #f9f8fcff;
+  --card-bg: #ffffff;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  --accent-purple: #a78bfa;
+}
+
+/* BODY */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-main);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  padding: 2rem 2%;
+}
+
+/* HEADING & WELCOME */
+.topbar h1 {
+  font-weight:700;
+  font-size:2.3rem;
+  color: var(--text-main);
+  margin-bottom:0.3rem;
+}
+.topbar p {
+  font-weight:400;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom:1.5rem;
+}
+
+/* REMINDERS */
+.reminders {
+  background: #fff;
+  padding: 0.8rem 2%;
+  color: var(--dark-purple);
+  border-left: 4px solid var(--primary-purple);
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+}
+
+/* CARDS */
+.card-box {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.2rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* STAT CARDS */
+.stat-card { border-top: 4px solid var(--accent-purple); }
+.stat-card h6 { font-weight:500; font-size:0.9rem; margin-bottom:0.3rem; }
+.stat-card h3 { font-weight:700; font-size:1.4rem; margin-bottom:0.3rem; }
+
+/* SCHEDULE ITEMS */
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+.schedule-item:last-child { border-bottom: none; }
+.time { font-weight:600; color: var(--primary-purple); min-width:90px; }
+.subject { font-weight:600; color: var(--text-main); }
+.class { font-size:0.85rem; color: var(--text-muted); }
+.schedule-item i { color: var(--accent-purple); }
+
+/* PENDING TASKS */
+.pending-tasks li { margin-bottom:0.5rem; }
