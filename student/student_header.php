@@ -1,3 +1,7 @@
+<?php
+$currentPage = basename($_SERVER['PHP_SELF']);
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,6 +15,7 @@
 <link href="../style/student/stud_menu.css" rel="stylesheet"/>
 <link href="../style/student/student_dash.css" rel="stylesheet"/>
 <link href="../style/student/stud_profile.css" rel="stylesheet"/>
+<link href="../style/student/stud_payment.css" rel="stylesheet"/>
 
 </head>
 

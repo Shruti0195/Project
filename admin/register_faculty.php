@@ -12,17 +12,24 @@
 <div class="card-box">
 <h6 class="section-title">Personal Information</h6>
 <div class="row g-3">
-<div class="col-md-6"><label class="form-label">First Name</label><input type="text" name="firstname" class="form-control"></div>
-<div class="col-md-6"><label class="form-label">Father/Husband Name</label><input type="text" name="lastname" class="form-control"></div>
-<div class="col-md-6"><label class="form-label">Last Name</label><input type="text" name="lastname" class="form-control"></div>
+<div class="col-md-4"><label class="form-label">First Name</label><input type="text" name="firstname" class="form-control"></div>
+<div class="col-md-4"><label class="form-label">Father/Husband Name</label><input type="text" name="lastname" class="form-control"></div>
+<div class="col-md-4"><label class="form-label">Last Name</label><input type="text" name="lastname" class="form-control"></div>
+
 <div class="col-md-6"><label class="form-label">Gender</label>
 <select name="gender" class="form-select"><option>Female</option><option>Male</option><option>Other</option></select></div>
+
 <div class="col-md-6"><label class="form-label">Date of Birth</label><input type="date" name="dob" class="form-control"></div>
+
 <div class="col-md-6"><label class="form-label">Marital Status</label>
 <select name="marital" class="form-select"><option>Single</option><option>Married</option></select></div>
+
 <div class="col-md-6"><label class="form-label">Personal Contact</label><input type="text" name="phone" class="form-control"></div>
+
 <div class="col-md-6"><label class="form-label">Official Email</label><input type="email" name="email" class="form-control"></div>
+
 <div class="col-md-6"><label class="form-label">Aadhar Number</label><input type="text" name="aadhar" class="form-control"></div>
+
 <div class="col-md-6"><label class="form-label">Languages Known</label><input type="text" name="languages" class="form-control"></div>
 
 <div class="col-md-6">

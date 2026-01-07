@@ -21,7 +21,8 @@
 
                 <div class="d-grid gap-2 mt-4">
                     <button class="btn btn-primary"><i class="fas fa-edit me-2"></i>Edit Profile</button>
-                    <button class="btn btn-outline-secondary"><i class="fas fa-print me-2"></i>Download ID Card</button>
+                    <button class="btn btn-outline-secondary" onclick="window.location.href='student_payment.php'"><i class="fa-solid fa-file-invoice-dollar"></i> 
+                    View Fees Details</button>
                 </div>
             </div>
         </div>

@@ -1,0 +1,182 @@
+/* ---------------- Topbar ---------------- */
+.topbar p {
+  font-size: 1.05rem;
+  color: #065f46; /* dark green text */
+}
+
+.topbar h1 {
+  font-weight: 700;
+  color: #065f46;
+  margin-top: 0;
+}
+
+/* Responsive topbar text */
+@media (max-width: 768px) {
+  .topbar p {
+    font-size: 0.9rem;
+  }
+  .topbar h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ---------------- Stat Cards ---------------- */
+.stats-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* allow cards to wrap on small screens */
+}
+
+.stat-col {
+  flex: 1 1 250px; /* responsive width, minimum 250px */
+}
+
+.card-box.stat-card {
+  background-color: #ffffff; /* light green background */
+  border-radius: 0.75rem;
+  padding: 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.stat-card h4 {
+  margin-bottom: 0.5rem;
+  color: #065f46; /* dark green heading */
+}
+
+.stat-card small {
+  color: #065f46; /* same dark green for small text */
+}
+
+/* Progress bars in stat cards */
+.progress {
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  background-color: #e8eae9; /* light green track */
+}
+
+.progress-bar {
+  background-color: #16a34a; /* green filled bar */
+}
+
+/* Responsive stat cards */
+@media (max-width: 768px) {
+  .stat-card {
+    padding: 0.8rem;
+  }
+}
+
+/* ---------------- Payment History Table ---------------- */
+.payment-history {
+  background-color: #f4f5f6ff;
+  color: #0f172a;
+  overflow-x: auto; /* scroll on small screens */
+  padding: 1rem;
+  border-radius: 0.75rem;
+}
+
+.payment-history h6,
+.payment-history a {
+  color: #065f46; /* dark green text */
+}
+
+.payment-history table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table header */
+.payment-history thead {
+  background-color: #065f46;
+}
+
+.payment-history th {
+  background-color: #065f46;
+  color: #ffffff; /* white text for contrast */
+  border: 2px solid #77a397;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+/* Table body */
+.payment-history td {
+  color: #0f172a;
+  border: 2px solid #77a397;
+  padding: 0.5rem;
+}
+
+/* Hover effect on rows */
+.payment-history tbody tr:hover {
+  background-color: #e6f4ef; /* light green hover */
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+  .payment-history th,
+  .payment-history td {
+    font-size: 0.85rem;
+    padding: 0.4rem;
+  }
+}
+
+/* ---------------- Pay / Action Button ---------------- */
+.btn-primary {
+  background: #065f46; /* green gradient */
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* Small buttons on mobile */
+@media (max-width: 768px) {
+  .btn-primary {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* ---------------- Due Payment Section ---------------- */
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.schedule-time {
+  font-weight: 700;
+  color: #065f46;
+}
+
+.schedule-subject {
+  font-weight: 700;
+  color: #000000;
+}
+
+.schedule-meta {
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+/* Responsive schedule items */
+@media (max-width: 768px) {
+  .schedule-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

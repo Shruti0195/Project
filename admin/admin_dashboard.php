@@ -1,5 +1,6 @@
 <?php include 'admin_header.php';?>
 <?php include 'admin_menu.php';?>
+<?php $currentPage = 'admin_dashboard.php'; ?>
 
 <div class="main-content">
   <!-- Topbar -->

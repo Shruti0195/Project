@@ -3,7 +3,12 @@
 
 <div class="main-content">
 
-<h2 class="page-title">Faculty List</h2>
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="page-title mb-0">Faculty List</h2>
+    <a href="register_faculty.php" class="btn btn-theme">
+        <i class="fas fa-user-plus me-2"></i>Register Faculty
+    </a>
+</div>
 
 <div class="card-box">
 <h6 class="section-title">Registered Faculty</h6>

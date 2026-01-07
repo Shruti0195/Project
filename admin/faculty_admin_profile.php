@@ -10,7 +10,7 @@
         <div class="row g-4 align-items-start">
             <div class="col-lg-4">
                 <div class="card-box text-center profile-sticky" style="top: 20px; z-index: 10;">
-                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="profile-img mb-3" alt="Faculty Photo">
+                    <img src="../images/facultylogin.png" class="profile-img mb-3" alt="Faculty Photo">
                     <h4 class="fw-bold mb-0">Dr. Rajesh Shah</h4>
                     <p class="fw-medium mb-3 faculty-id">Employee ID: FAC-2015-009</p>
                     
