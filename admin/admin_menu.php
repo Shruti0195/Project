@@ -1,3 +1,6 @@
+
+<nav class="navbar navbar-expand-xl navbar-custom navbar-admin">
+  <div class="container-fluid">
 <!-- BRAND -->
     <a class="navbar-brand d-flex flex-column lh-1 me-4" href="#">
       <span class="navbar-brand-custom">SMS</span>
@@ -15,8 +18,8 @@
       <ul class="navbar-nav ms-auto align-items-xl-center gap-xl-2 mt-3 mt-xl-0">
         
         <li class="nav-item">
-        <a class="nav-link nav-link-custom <?= ($currentPage == 'admin_dashboard.php') ? 'active' : '' ?>"
-        href="admin_dashboard.php">
+        <a class="nav-link nav-link-custom <?= ($currentPage == 'index.php') ? 'active' : '' ?>"
+        href="index.php">
         <i class="fas fa-tachometer-alt"></i> Dashboard
       </a>
 

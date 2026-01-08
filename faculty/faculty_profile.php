@@ -1,4 +1,27 @@
-<?php include 'faculty_header.php'; ?>
+<?php
+$currentPage = basename($_SERVER['PHP_SELF']);
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SMS - Faculty Navbar</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link href="style/fmenu.css" rel="stylesheet"/>
+<link href="style/faculty_profile.css" rel="stylesheet"/>
+
+
+</head>
+
+<body>
+    
+
+<!-- NAVBAR -->
 <?php include 'faculty_menu.php'; ?>
 
     <div class="main-content">
@@ -100,11 +123,11 @@
                             <div class="profile-label">Subjects Taught (Undergraduate & Postgrad)</div>
                             <div class="profile-value">Data Structures, Machine Learning, DBMS, Artificial Intelligence, Python for Data Science</div>
                         </div>
-                        <div class="col-md-6 info-row">
+                        <div class="col-md-12 info-row">
                             <div class="profile-label">Research Publications</div>
                             <div class="profile-value">14 International Journals (Scopus Index), 8 IEEE Conferences</div>
                         </div>
-                        <div class="col-md-6 info-row">
+                        <div class="col-md-12 info-row">
                             <div class="profile-label">Mentorship & Projects</div>
                             <div class="profile-value">45+ UG Projects, 12 Master Thesis, 3 Ph.D. Scholars (Ongoing)</div>
                         </div>
@@ -152,4 +175,6 @@
             </div>
         </div>
     </div>
-<?php include 'faculty_footer.php'; ?>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

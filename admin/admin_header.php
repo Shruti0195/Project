@@ -1,6 +1,4 @@
-<?php
-$currentPage = basename($_SERVER['PHP_SELF']);
-?>
+
 
 <!doctype html>
 <html lang="en">

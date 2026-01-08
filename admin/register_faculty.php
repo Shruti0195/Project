@@ -1,6 +1,21 @@
-<?php include 'admin_header.php'?>
-<?php include 'admin_menu.php'?>
-<div class="main-content">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SMS - Navbar</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link href="style/amenu.css" rel="stylesheet"/>
+<link href="style/register_faculty.css" rel="stylesheet"/>
+
+
+</head>
+<body>
+  <?php include 'admin_menu.php'?><div class="main-content">
 <div class="heading-back">
 <h2 class="page-title">Faculty Registration Form</h2>
 <a href="javascript:history.back()" class="btn btn-theme">← Back</a>
@@ -96,4 +111,9 @@
 </form>
 </div>
 
-<?php include 'admin_footer.php';?>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

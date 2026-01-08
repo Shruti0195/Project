@@ -1,7 +1,20 @@
-<?php include 'admin_header.php';?>
-<?php include 'admin_menu.php';?>
-<?php $currentPage = 'admin_dashboard.php'; ?>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SMS - Navbar</title>
 
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link href="style/amenu.css" rel="stylesheet"/>
+<link href="style/admin_dashboard.css" rel="stylesheet"/>
+
+</head>
+<body>
+  <?php include 'admin_menu.php'?>
 <div class="main-content">
   <!-- Topbar -->
   <div class="topbar mb-4">
@@ -12,7 +25,7 @@
   <!-- Stats Grid -->
   <div class="stats-grid mb-4">
     <div class="stat-col">
-      <div class="card-box stat-card" style="border-top-color: #2563eb;">
+      <div class="card-box stat-card" style="border-top:4px solid #2563eb;">
         <div class="d-flex align-items-center gap-2 mb-2">
           <i class="fas fa-users fa-lg" style="color:#2563eb;"></i>
           <h6 class="mb-0">Total Users</h6>
@@ -21,7 +34,7 @@
       </div>
     </div>
     <div class="stat-col">
-      <div class="card-box stat-card" style="border-top-color: #ef4444;">
+      <div class="card-box stat-card" style="border-top:4px solid #ef4444;">
         <div class="d-flex align-items-center gap-2 mb-2">
           <i class="fas fa-book-open fa-lg" style="color:#ef4444;"></i>
           <h6 class="mb-0">Courses</h6>
@@ -30,7 +43,7 @@
       </div>
     </div>
     <div class="stat-col">
-      <div class="card-box stat-card" style="border-top-color: #f59e0b;">
+      <div class="card-box stat-card" style="border-top:4px solid #f59e0b;">
         <div class="d-flex align-items-center gap-2 mb-2">
           <i class="fas fa-file-alt fa-lg" style="color:#f59e0b;"></i>
           <h6 class="mb-0">Assignments</h6>
@@ -39,7 +52,7 @@
       </div>
     </div>
     <div class="stat-col">
-      <div class="card-box stat-card" style="border-top-color: #1e3a8a;">
+      <div class="card-box stat-card" style="border-top:4px solid #1e3a8a;">
         <div class="d-flex align-items-center gap-2 mb-2">
           <i class="fas fa-chart-line fa-lg" style="color:#1e3a8a;"></i>
           <h6 class="mb-0">Active Reports</h6>
@@ -73,17 +86,12 @@
     </div>
   </div>
 
-  <!-- Performance Graph -->
-  <div class="card-box">
-    <h6>Course Performance Trend</h6>
-    <div class="chart-area">
-      <div class="bar-container"><div class="bar" style="height: 70%;"><span class="bar-value">70%</span></div><div class="bar-label">Math</div></div>
-      <div class="bar-container"><div class="bar" style="height: 85%;"><span class="bar-value">85%</span></div><div class="bar-label">Physics</div></div>
-      <div class="bar-container"><div class="bar" style="height: 65%;"><span class="bar-value">65%</span></div><div class="bar-label">DS</div></div>
-      <div class="bar-container"><div class="bar" style="height: 95%;"><span class="bar-value">95%</span></div><div class="bar-label">AI</div></div>
-    </div>
-  </div>
-
+ 
 </div>
 
-<?php include 'admin_footer.php';?>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

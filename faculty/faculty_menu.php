@@ -1,4 +1,6 @@
 <!-- BRAND -->
+ <nav class="navbar navbar-expand-xl navbar-custom">
+  <div class="container-fluid">
     <a class="navbar-brand d-flex flex-column lh-1 me-4" href="#">
       <span class="navbar-brand-custom">SMS</span>
       <small class="brand-subtitle">Faculty</small>

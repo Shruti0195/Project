@@ -23,5 +23,3 @@ $currentPage = basename($_SERVER['PHP_SELF']);
     
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-xl navbar-custom">
-  <div class="container-fluid">

@@ -1,4 +1,26 @@
-<?php include 'faculty_header.php'; ?>
+<?php
+$currentPage = basename($_SERVER['PHP_SELF']);
+?>
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SMS - Faculty Navbar</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link href="style/fmenu.css" rel="stylesheet"/>
+<link href="style/faculty_dash.css" rel="stylesheet"/>
+
+
+</head>
+
+<body>
+    
+
 <?php include 'faculty_menu.php'; ?>
 
 <div class="main-content">
@@ -16,25 +38,25 @@
   <!-- STATS -->
   <div class="row g-3 mb-4">
     <div class="col-md-3">
-      <div class="card-box stat-card">
+      <div class="card-box stat-card" style="border-top:4px solid #754fbeff;">
         <h6>Subjects</h6>
         <h3>04</h3>
       </div>
     </div>
     <div class="col-md-3">
-      <div class="card-box stat-card" style="border-top-color:#b491f5;">
+      <div class="card-box stat-card" style="border-top:4px solid #754fbeff;">
         <h6>Classes</h6>
         <h3>06</h3>
       </div>
     </div>
     <div class="col-md-3">
-      <div class="card-box stat-card" style="border-top-color:#c3a5f7;">
+      <div class="card-box stat-card" style="border-top:4px solid #754fbeff;">
         <h6>Students</h6>
         <h3>180</h3>
       </div>
     </div>
     <div class="col-md-3">
-      <div class="card-box stat-card" style="border-top-color:#c8a2f7;">
+      <div class="card-box stat-card" style="border-top:4px solid #754fbeff;">
         <h6>Lectures Today</h6>
         <h3>03</h3>
       </div>
@@ -110,4 +132,6 @@
   </div>
 </div>
 
-<?php include 'faculty_footer.php'; ?>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
