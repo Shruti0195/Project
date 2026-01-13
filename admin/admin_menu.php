@@ -39,9 +39,9 @@
         </a>
       </li>
 
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fas fa-book-open"></i> Courses</a></li>
+        <!-- <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fas fa-book-open"></i> Courses</a></li>
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fas fa-file-alt"></i> Assignments</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fas fa-chart-line"></i> Reports</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fas fa-chart-line"></i> Reports</a></li>-->
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fas fa-bell"></i> Notifications</a></li>
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fas fa-user-circle"></i> Profile</a></li>
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>

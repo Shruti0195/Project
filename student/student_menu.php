@@ -19,7 +19,7 @@
           <i class="fas fa-user-circle"></i> Dashboard
         </a>
         </li>
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fas fa-book-open"></i> My Courses</a></li>
+        <!-- <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fas fa-book-open"></i> My Courses</a></li> -->
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fas fa-file-alt"></i> Assignments</a></li>
         <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fas fa-poll"></i> Results</a></li>
 
@@ -30,7 +30,7 @@
         </a>
         </li>
         
-        <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fas fa-calendar"></i> Schedule</a></li>
+        <!-- <li class="nav-item"><a class="nav-link nav-link-custom" href="#"><i class="fas fa-calendar"></i> Schedule</a></li> -->
 
         <li class="nav-item position-relative">
           <a class="nav-link nav-link-custom" href="#">

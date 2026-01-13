@@ -116,11 +116,11 @@
                             <div class="profile-label">Subjects Taught (Undergraduate & Postgrad)</div>
                             <div class="profile-value">Data Structures, Machine Learning, DBMS, Artificial Intelligence, Python for Data Science</div>
                         </div>
-                        <div class="col-md-6 info-row">
+                        <div class="col-md-12 info-row">
                             <div class="profile-label">Research Publications</div>
                             <div class="profile-value">14 International Journals (Scopus Index), 8 IEEE Conferences</div>
                         </div>
-                        <div class="col-md-6 info-row">
+                        <div class="col-md-12 info-row">
                             <div class="profile-label">Mentorship & Projects</div>
                             <div class="profile-value">45+ UG Projects, 12 Master Thesis, 3 Ph.D. Scholars (Ongoing)</div>
                         </div>
