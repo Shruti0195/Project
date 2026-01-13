@@ -1,3 +1,22 @@
+.main-content {
+  padding: 1.5rem 2rem;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .main-content {
+    padding: 1.2rem 1.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .main-content {
+    padding: 1rem;
+  }
+}
+
+
 /* --- Topbar --- */
 .topbar p {
   font-size: 1.05rem;
@@ -17,6 +36,18 @@
     font-size: 1.5rem;
   }
 }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* --- Payment History --- */
 .payment-history {
@@ -70,6 +101,30 @@
 .stat-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+.card-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+.schedule-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  background: #f8fafc;
+  border-radius: 10px;
+  margin-top: 0.6rem;
+}
+
+.schedule-time {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.schedule-subject {
+  font-weight: 500;
 }
 
 /* Adjust card size on small screens */

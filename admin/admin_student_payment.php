@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
@@ -12,136 +12,126 @@
 <link href="style/amenu.css" rel="stylesheet"/>
 <link href="style/admin_stud_payment.css" rel="stylesheet"/>
 
-
 </head>
 <body>
-<?php include 'admin_menu.php'?>
-<div class="main-content">
+  <?php include 'admin_menu.php';?>
+  
+  <div class="main-content">
+    <!-- TOP BAR -->
+    <div class="topbar mb-4">
+      <p class="mb-1">Student Portal</p>
+      <h1 class="mt-0">Payment Details</h1>
+    </div>
 
-  <!-- TOP BAR -->
-  <div class="topbar mb-4">
-    <p class="text-muted mb-1">Student Portal</p>
-    <h1 class="mt-0">Payment Details</h1>
-  </div>
-
-  <!-- PAYMENT SUMMARY -->
-  <div class="stats-grid mb-4">
-
-    <!-- Total Fees -->
-    <div class="stat-col">
-      <div class="card-box stat-card h-100">
-        <div class="d-flex align-items-center gap-2 mb-2">
-          <i class="fas fa-wallet fa-lg" style="color:#2563eb;"></i>
-          <h6 class="mb-0">Total Fees</h6>
+    <!-- PAYMENT SUMMARY -->
+    <div class="stats-grid mb-4">
+      <!-- Total Fees -->
+      <div class="stat-col">
+        <div class="card-box stat-card h-100">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <i class="fas fa-wallet fa-lg" style="color:#2563eb;"></i>
+            <h6 class="mb-0">Total Fees</h6>
+          </div>
+          <h4 class="mb-2">₹20,000</h4>
+          <small>For current academic year</small>
         </div>
-        <h4 class="mb-2">&#8377; 20,000</h4>
-        <small class="text-muted">For current academic year</small>
+      </div>
+
+      <!-- Paid Amount -->
+      <div class="stat-col">
+        <div class="card-box stat-card h-100">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <i class="fas fa-check-circle fa-lg" style="color:#16a34a;"></i>
+            <h6 class="mb-0">Paid</h6>
+          </div>
+          <h4 class="mb-2">₹12,000</h4>
+          <div class="progress">
+            <div class="progress-bar bg-success" style="width:60%;"></div>
+          </div>
+          <small>60% completed</small>
+        </div>
+      </div>
+
+      <!-- Pending Fees -->
+      <div class="stat-col">
+        <div class="card-box stat-card h-100">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <i class="fas fa-coins fa-lg" style="color:#ef4444;"></i>
+            <h6 class="mb-0">Pending</h6>
+          </div>
+          <h4 class="mb-2">₹8,000</h4>
+          <div class="progress">
+            <div class="progress-bar" style="width:40%; background-color:#ef4444;"></div>
+          </div>
+          <small>Remaining amount</small>
+        </div>
       </div>
     </div>
 
-    <!-- Paid Amount -->
-    <div class="stat-col">
-      <div class="card-box stat-card h-100">
-        <div class="d-flex align-items-center gap-2 mb-2">
-          <i class="fas fa-check-circle fa-lg" style="color:#16a34a;"></i>
-          <h6 class="mb-0">Paid</h6>
-        </div>
-        <h4 class="mb-2">&#8377; 12,000</h4>
-        <div class="progress">
-          <div class="progress-bar bg-success" style="width:60%;"></div>
-        </div>
-        <small class="text-muted">60% completed</small>
+    <!-- PAYMENT HISTORY -->
+    <div class="card-box mb-4 payment-history">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="m-0">Payment History</h5>
+        <a href="#" class="fw-bold small text-decoration-none">
+          <i class="fas fa-download me-1"></i> Download Receipt
+        </a>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table align-middle">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Description</th>
+              <th>Amount</th>
+              <th>Method</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10 Jan 2026</td>
+              <td>Semester 4 Fees</td>
+              <td>₹6,000</td>
+              <td>Online</td>
+              <td><span class="badge bg-success">Paid</span></td>
+            </tr>
+            <tr>
+              <td>15 Oct 2025</td>
+              <td>Semester 3 Fees</td>
+              <td>₹6,000</td>
+              <td>UPI</td>
+              <td><span class="badge bg-success">Paid</span></td>
+            </tr>
+            <tr>
+              <td>05 Jul 2025</td>
+              <td>Semester 2 Fees</td>
+              <td>₹8,000</td>
+              <td>Cash</td>
+              <td><span class="badge bg-warning text-dark">Partial</span></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
-    <!-- Pending Fees -->
-    <div class="stat-col">
-      <div class="card-box stat-card h-100">
-        <div class="d-flex align-items-center gap-2 mb-2">
-          <i class="fas fa-coins fa-lg" style="color:#ef4444;"></i>
-          <h6 class="mb-0">Pending</h6>
+    <!-- DUE PAYMENT SECTION -->
+    <div class="card-box mb-4">
+      <h5>Upcoming / Due Payments</h5>
+
+      <div class="schedule-item">
+        <div class="schedule-time">30 Mar 2026</div>
+        <div class="schedule-details">
+          <div class="schedule-subject">Semester 5 Fees</div>
+          <div class="schedule-meta">Amount: ₹8,000</div>
         </div>
-        <h4 class="mb-2">&#8377; 8,000</h4>
-        <div class="progress">
-          <div class="progress-bar" style="width:40%; background-color:#ef4444;"></div>
-        </div>
-        <small class="text-muted">Remaining amount</small>
+        <a href="#" class="btn btn-sm btn-primary">
+          <i class="fas fa-credit-card me-1"></i> Pay Now
+        </a>
       </div>
     </div>
-
   </div>
 
-  <!-- PAYMENT HISTORY -->
-  <div class="card-box mb-4 payment-history">
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <h6 class="m-0">Payment History</h6>
-      <a href="#" class="fw-bold small text-decoration-none">
-        <i class="fas fa-download me-1"></i> Download Receipt
-      </a>
-    </div>
-
-    <div class="table-responsive">
-      <table class="table align-middle">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Description</th>
-            <th>Amount</th>
-            <th>Method</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>10 Jan 2026</td>
-            <td>Semester 4 Fees</td>
-            <td>&#8377; 6,000</td>
-            <td>Online</td>
-            <td><span class="badge bg-success">Paid</span></td>
-          </tr>
-          <tr>
-            <td>15 Oct 2025</td>
-            <td>Semester 3 Fees</td>
-            <td>&#8377; 6,000</td>
-            <td>UPI</td>
-            <td><span class="badge bg-success">Paid</span></td>
-          </tr>
-          <tr>
-            <td>05 Jul 2025</td>
-            <td>Semester 2 Fees</td>
-            <td>&#8377; 8,000</td>
-            <td>Cash</td>
-            <td><span class="badge bg-warning text-dark">Partial</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-
-  <!-- DUE PAYMENT SECTION -->
-  <div class="card-box mb-4">
-    <h6>Upcoming / Due Payments</h6>
-
-    <div class="schedule-item">
-      <div class="schedule-time">30 Mar 2026</div>
-      <div class="schedule-details">
-        <div class="schedule-subject">Semester 5 Fees</div>
-        <div class="schedule-meta">Amount: &#8377; 8,000</div>
-      </div>
-      <a href="#" class="btn btn-sm btn-primary">
-        <i class="fas fa-credit-card me-1"></i> Pay Now
-      </a>
-    </div>
-
-  </div>
-
-</div>
-
-
-
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
